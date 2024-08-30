@@ -43,7 +43,7 @@
                 <label>Direction</label>
                 <div class="btn-group" data-toggle="buttons">
                     {% for direction in directions %}
-                        <label class="btn btn-outline-primary" onclick="selectedButton(this)">
+                        <label class="btn btn-outline-primary" onclick="selectButton(this)">
                             <input type="radio" name="channel" value="{{ direction.0 }}" required> {{ direction.1 }}
                         </label>
                     {% endfor %}
