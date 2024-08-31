@@ -24,7 +24,7 @@ class Interaction(models.Model):
     ]
 
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    channel = models.CharField(max_length=15, choices=CHANNEL_CHOICES)
+    channel = models.CharField(max_length=10, choices=CHANNEL_CHOICES)
     direction = models.CharField(max_length=10, choices=DIRECTION_CHOICES)
     interaction_date = models.DateField(auto_now_add=True)
     summary = models.TextField()
